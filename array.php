@@ -28,8 +28,13 @@ function dataAtual(): string
 
     $nomeDiaDaSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
-    $dataFormatada = $nomeDiaDaSemana[$diaSemana] . ',' . $diaMes . ',' . 'de';
+    $dataFormatada = $nomeDiaDaSemana[$diaSemana] . ',' . $diaMes . ',' . 'de' . $nomeDosMeses[$mes - 1] . ',' . $ano;
+
+    echo 'Dia do mês: ' . $diaMes . '<br>' . 'Dia semana: ' . $diaSemana . '<br>' . 'Mês: ' . $mes . '<br>' . 'Ano: ' . $ano . '<br>';
     return $dataFormatada;
+
 }
+
+echo dataAtual();
 
 
