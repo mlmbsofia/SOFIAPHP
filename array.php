@@ -29,6 +29,7 @@ function dataAtual(): string
     $nomeDiaDaSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
     $dataFormatada = $nomeDiaDaSemana[$diaSemana] . ',' . $diaMes . ',' . 'de';
+    return $dataFormatada;
 }
 
 
